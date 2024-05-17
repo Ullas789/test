@@ -1,5 +1,3 @@
-hi hello 
-
 
 student@plab23 MINGW32 ~
 $ cd ..
@@ -115,3 +113,30 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Ullas789/test.git
  * [new branch]      main -> main
 
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ ^C
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.90 KiB | 139.00 KiB/s, done.
+From https://github.com/Ullas789/test
+   62a5d86..22f92ab  main       -> origin/main
+Updating 62a5d86..22f92ab
+Fast-forward
+ file.txt | 115 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 115 insertions(+)
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git rest --hard
+git: 'rest' is not a git command. See 'git --help'.
+
+The most similar commands are
+        restore
+        reset
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ nano file.txt
