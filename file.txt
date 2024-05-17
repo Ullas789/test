@@ -1,2 +1,117 @@
 hi hello 
 
+
+student@plab23 MINGW32 ~
+$ cd ..
+
+student@plab23 MINGW32 /c/Users
+$ cd student
+
+student@plab23 MINGW32 ~
+$ cd desktop/ullas_ci010
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010 (master)
+$ git clone https://github.com/Ullas789/test.git
+Cloning into 'test'...
+warning: You appear to have cloned an empty repository.
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/student/Desktop/ullas_ci010/.g
+it/
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    new.txt
+        deleted:    test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010 (master)
+$ cd test
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git config --global user.name Ullas789
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git config --global user.email ullas78999@gmail.com
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git config --global --list
+user.name=Ullas789
+user.email=ullas78999@gmail.com
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ nano file.txt
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git add file.txt
+warning: in the working copy of 'file.txt', LF will be replaced by CRLF the next
+ time Git touches it
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git commit -m file.txt
+[main (root-commit) 62a5d86] file.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 file.txt
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git push
+remote: Permission to Ullas789/test.git denied to Shreyasr1.
+fatal: unable to access 'https://github.com/Ullas789/test.git/': The requested U
+RL returned error: 403
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git commit -m "new file"
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git push
+remote: Permission to Ullas789/test.git denied to Shreyasr1.
+fatal: unable to access 'https://github.com/Ullas789/test.git/': The requested U
+RL returned error: 403
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git push
+info: please complete authentication in your browser...
+remote: Permission to Ullas789/test.git denied to Shreyasr1.
+fatal: unable to access 'https://github.com/Ullas789/test.git/': The requested U
+RL returned error: 403
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git push
+fatal: User canceled device code authentication
+error: unable to read askpass response from 'C:/Program Files (x86)/Git/mingw32/
+bin/git-askpass.exe'
+Password for 'https://github.com':
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test
+$ git push
+fatal: User canceled device code authentication
+
+
+student@plab23 MINGW32 ~/desktop/ullas_ci010/test (main)
+$ git push
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 220 bytes | 110.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ullas789/test.git
+ * [new branch]      main -> main
+
